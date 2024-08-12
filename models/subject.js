@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const questionAnswerSchema = new mongoose.Schema({
   question: { type: String, required: true },
   answer: { type: String, required: true },
+  image: { type: String }  // Optional field for image URL
 });
 
 // Define the schema for the subject, which includes an array of questions and answers

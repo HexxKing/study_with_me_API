@@ -31,6 +31,7 @@ app.get('/test', (request, response) => {
 });
 
 // Routes
+app.get('/allSubjects', Handler.getAllSubjects); // Get all the Subjects (Question & Answer) from the database 
 app.get('/subject', Handler.getSubject); // Get the Subject (Question & Answer) from the database 
 
 // Not Found
